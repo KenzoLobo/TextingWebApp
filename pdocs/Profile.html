@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>Profile API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>Profile</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># EDITED NOW
+
+
+# Profile.py
+#
+# ICS 32 Fall 2021
+# Assignment #2: Journal
+#
+# Author: Mark S. Baldwin
+#
+# v0.1.7
+
+# You should review this code to identify what features you need to support
+# in your program for assignment 2.
+#
+# YOU DO NOT NEED TO READ OR UNDERSTAND THE JSON SERIALIZATION ASPECTS OF THIS CODE RIGHT NOW, 
+# though can you certainly take a look at it if you are curious.
+#
+import json, time, os
+from pathlib import Path
+from ds_messenger import DirectMessage
+
+&#34;&#34;&#34;
+DsuFileError is a custom exception handler that you should catch in your own code. It
+is raised when attempting to load or save Profile objects to file the system.
+
+&#34;&#34;&#34;
+
+
+class DsuFileError(Exception):
+    pass
+
+
+&#34;&#34;&#34;
+DsuProfileError is a custom exception handler that you should catch in your own code. It
+is raised when attempting to deserialize a dsu file to a Profile object.
+
+&#34;&#34;&#34;
+
+
+class DsuProfileError(Exception):
+    pass
+
+
+class Post(dict):
+    &#34;&#34;&#34; 
+
+    The Post class is responsible for working with individual user posts. It currently supports two features: 
+    A timestamp property that is set upon instantiation and when the entry object is set and an 
+    entry property that stores the post message.
+
+    &#34;&#34;&#34;
+
+    def __init__(self, entry: str = None, timestamp: float = 0):
+        self._timestamp = timestamp
+        self.set_entry(entry)
+
+        # Subclass dict to expose Post properties for serialization
+        # Don&#39;t worry about this!
+        dict.__init__(self, entry=self._entry, timestamp=self._timestamp)
+
+    def set_entry(self, entry):
+        self._entry = entry
+        dict.__setitem__(self, &#39;entry&#39;, entry)
+
+        # If timestamp has not been set, generate a new from time module
+        if self._timestamp == 0:
+            self._timestamp = time.time()
+
+    def get_entry(self):
+        return self._entry
+
+    def set_time(self, time: float):
+        self._timestamp = time
+        dict.__setitem__(self, &#39;timestamp&#39;, time)
+
+    def get_time(self):
+        return self._timestamp
+
+    &#34;&#34;&#34;
+
+    The property method is used to support get and set capability for entry and time values.
+    When the value for entry is changed, or set, the timestamp field is updated to the
+    current time.
+
+    &#34;&#34;&#34;
+    entry = property(get_entry, set_entry)
+    timestamp = property(get_time, set_time)
+
+
+class Profile:
+    &#34;&#34;&#34;
+    The Profile class exposes the properties required to join an ICS 32 DSU server. You will need to 
+    use this class to manage the information provided by each new user created within your program for a2. 
+    Pay close attention to the properties and functions in this class as you will need to make use of 
+    each of them in your program.
+
+    When creating your program you will need to collect user input for the properties exposed by this class. 
+    A Profile class should ensure that a username and password are set, but contains no conventions to do so. 
+    You should make sure that your code verifies that required properties are set.
+
+    &#34;&#34;&#34;
+
+    def __init__(self, dsuserver=None, username=None, password=None):
+        self.dsuserver = dsuserver  # REQUIRED
+        self.username = username  # REQUIRED
+        self.password = password  # REQUIRED
+        self.bio = &#39;&#39;  # OPTIONAL
+        self._posts = []  # OPTIONAL
+
+        self._messages = []
+
+        self._users = []  # This list used to store the usernames of users that you have messages with
+
+    #  Done: Write a function that goes through all the messages and returns a list of all the posts to/from a specific
+    #   user. You should be able to enter a username into the function as a parameter and get a list of all their
+    #   sent/received messages.
+
+    def get_chat_messages(self, username: str) -&gt; list:
+        &#34;&#34;&#34;
+        accepts a username and returns a list of all the messages in the chat with that user
+        &#34;&#34;&#34;
+
+        chat_messages = []
+
+        for message in self._messages:
+            if (message[&#39;from&#39;] == username or message[&#39;recipient&#39;] == username):
+                chat_messages.append(message)
+
+        return chat_messages
+
+    def add_post(self, post: Post) -&gt; None:
+        &#34;&#34;&#34;
+
+        add_post accepts a Post object as parameter and appends it to the posts list. Posts are stored in a
+        list object in the order they are added. So if multiple Posts objects are created, but added to the
+        Profile in a different order, it is possible for the list to not be sorted by the Post.timestamp property.
+        So take caution as to how you implement your add_post code.
+
+        &#34;&#34;&#34;
+        self._posts.append(post)
+
+    def add_msg(self, message: DirectMessage) -&gt; None:
+        &#34;&#34;&#34;
+
+        add_msg accepts a DirectMessage object as parameter and appends it to the messages list.
+
+        &#34;&#34;&#34;
+        # Done: Add code that checks both the frm and recipient instances of the message and adds the username to the
+        #  self._users variable IF the username is NOT self.username AND is NOT already on the list.
+        message_recipient = message[&#39;recipient&#39;]
+        message_from = message[&#39;from&#39;]
+
+        message_recipient_exists = False
+        message_from_exists = False
+
+        for usr in self._users:
+            if usr == message_recipient:
+                message_recipient_exists = True
+            if usr == message_from:
+                message_from_exists = True
+
+        if message_recipient_exists == False and message_recipient != self.username:
+            self._users.append(message_recipient)
+        if message_from_exists == False and message_from != self.username:
+            self._users.append(message_from)
+
+        self._messages.append(message)
+
+    def del_post(self, index: int) -&gt; bool:
+        &#34;&#34;&#34;
+
+        del_post removes a Post at a given index and returns True if successful and False if an invalid
+        index was supplied.
+
+        To determine which post to delete you must implement your own search operation on the posts
+        returned from the get_posts function to find the correct index.
+
+        &#34;&#34;&#34;
+        try:
+            del self._posts[index]
+            return True
+        except IndexError:
+            return False
+
+    def get_posts(self) -&gt; list:
+        &#34;&#34;&#34;
+
+        get_posts returns the list object containing all posts that have been added to the Profile object
+
+        &#34;&#34;&#34;
+        return self._posts
+
+    def save_profile(self, path: str) -&gt; None:
+        &#34;&#34;&#34;
+
+        save_profile accepts an existing dsu file to save the current instance of Profile to the file system.
+
+        Example usage:
+
+        profile = Profile()
+        profile.save_profile(&#39;/path/to/file.dsu&#39;)
+
+        Raises DsuFileError
+
+        &#34;&#34;&#34;
+
+        # Done: Use the function that creates the dictionary of conversations
+
+        p = Path(path)
+
+        if os.path.exists(p) and p.suffix == &#39;.dsu&#39;:
+            try:
+                f = open(p, &#39;w&#39;)
+                json.dump(self.__dict__, f)
+                f.close()
+            except Exception as ex:
+                raise DsuFileError(&#34;An error occurred while attempting to process the DSU file.&#34;, ex)
+        else:
+            raise DsuFileError(&#34;Invalid DSU file path or type&#34;)
+
+    def load_profile(self, path: str) -&gt; None:
+        &#34;&#34;&#34;
+
+        load_profile will populate the current instance of Profile with data stored in a DSU file.
+
+        Example usage:
+
+        profile = Profile()
+        profile.load_profile(&#39;/path/to/file.dsu&#39;)
+
+        Raises DsuProfileError, DsuFileError
+
+        &#34;&#34;&#34;
+        p = Path(path)
+
+        if os.path.exists(p) and p.suffix == &#39;.dsu&#39;:
+            try:
+                f = open(p, &#39;r&#39;)
+                obj = json.load(f)
+                self.username = obj[&#39;username&#39;]
+                self.password = obj[&#39;password&#39;]
+                self.dsuserver = obj[&#39;dsuserver&#39;]
+                self.bio = obj[&#39;bio&#39;]
+                for post_obj in obj[&#39;_posts&#39;]:
+                    post = Post(post_obj[&#39;entry&#39;], post_obj[&#39;timestamp&#39;])
+                    self._posts.append(post)
+                for message in obj[&#39;_messages&#39;]:
+                    msg = DirectMessage(message=message[&#34;message&#34;], timestamp=message[&#34;timestamp&#34;],
+                                        recipient=message[&#34;recipient&#34;], frm=message[&#34;frm&#34;])
+                    self._messages.append(msg)
+                for user in obj[&#39;_users&#39;]:
+                    self._users.append(user)
+                f.close()
+            except Exception as ex:
+                raise DsuProfileError(ex)
+        else:
+            raise DsuFileError()</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="Profile.DsuFileError"><code class="flex name class">
+<span>class <span class="ident">DsuFileError</span></span>
+<span>(</span><span>*args, **kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Common base class for all non-exit exceptions.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class DsuFileError(Exception):
+    pass</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>builtins.Exception</li>
+<li>builtins.BaseException</li>
+</ul>
+</dd>
+<dt id="Profile.DsuProfileError"><code class="flex name class">
+<span>class <span class="ident">DsuProfileError</span></span>
+<span>(</span><span>*args, **kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Common base class for all non-exit exceptions.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class DsuProfileError(Exception):
+    pass</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>builtins.Exception</li>
+<li>builtins.BaseException</li>
+</ul>
+</dd>
+<dt id="Profile.Post"><code class="flex name class">
+<span>class <span class="ident">Post</span></span>
+<span>(</span><span>entry: str = None, timestamp: float = 0)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>The Post class is responsible for working with individual user posts. It currently supports two features:
+A timestamp property that is set upon instantiation and when the entry object is set and an
+entry property that stores the post message.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Post(dict):
+    &#34;&#34;&#34; 
+
+    The Post class is responsible for working with individual user posts. It currently supports two features: 
+    A timestamp property that is set upon instantiation and when the entry object is set and an 
+    entry property that stores the post message.
+
+    &#34;&#34;&#34;
+
+    def __init__(self, entry: str = None, timestamp: float = 0):
+        self._timestamp = timestamp
+        self.set_entry(entry)
+
+        # Subclass dict to expose Post properties for serialization
+        # Don&#39;t worry about this!
+        dict.__init__(self, entry=self._entry, timestamp=self._timestamp)
+
+    def set_entry(self, entry):
+        self._entry = entry
+        dict.__setitem__(self, &#39;entry&#39;, entry)
+
+        # If timestamp has not been set, generate a new from time module
+        if self._timestamp == 0:
+            self._timestamp = time.time()
+
+    def get_entry(self):
+        return self._entry
+
+    def set_time(self, time: float):
+        self._timestamp = time
+        dict.__setitem__(self, &#39;timestamp&#39;, time)
+
+    def get_time(self):
+        return self._timestamp
+
+    &#34;&#34;&#34;
+
+    The property method is used to support get and set capability for entry and time values.
+    When the value for entry is changed, or set, the timestamp field is updated to the
+    current time.
+
+    &#34;&#34;&#34;
+    entry = property(get_entry, set_entry)
+    timestamp = property(get_time, set_time)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>builtins.dict</li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="Profile.Post.entry"><code class="name">var <span class="ident">entry</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_entry(self):
+    return self._entry</code></pre>
+</details>
+</dd>
+<dt id="Profile.Post.timestamp"><code class="name">var <span class="ident">timestamp</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_time(self):
+    return self._timestamp</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="Profile.Post.get_entry"><code class="name flex">
+<span>def <span class="ident">get_entry</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_entry(self):
+    return self._entry</code></pre>
+</details>
+</dd>
+<dt id="Profile.Post.get_time"><code class="name flex">
+<span>def <span class="ident">get_time</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_time(self):
+    return self._timestamp</code></pre>
+</details>
+</dd>
+<dt id="Profile.Post.set_entry"><code class="name flex">
+<span>def <span class="ident">set_entry</span></span>(<span>self, entry)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_entry(self, entry):
+    self._entry = entry
+    dict.__setitem__(self, &#39;entry&#39;, entry)
+
+    # If timestamp has not been set, generate a new from time module
+    if self._timestamp == 0:
+        self._timestamp = time.time()</code></pre>
+</details>
+</dd>
+<dt id="Profile.Post.set_time"><code class="name flex">
+<span>def <span class="ident">set_time</span></span>(<span>self, time: float)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_time(self, time: float):
+    self._timestamp = time
+    dict.__setitem__(self, &#39;timestamp&#39;, time)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="Profile.Profile"><code class="flex name class">
+<span>class <span class="ident">Profile</span></span>
+<span>(</span><span>dsuserver=None, username=None, password=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>The Profile class exposes the properties required to join an ICS 32 DSU server. You will need to
+use this class to manage the information provided by each new user created within your program for a2.
+Pay close attention to the properties and functions in this class as you will need to make use of
+each of them in your program.</p>
+<p>When creating your program you will need to collect user input for the properties exposed by this class.
+A Profile class should ensure that a username and password are set, but contains no conventions to do so.
+You should make sure that your code verifies that required properties are set.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Profile:
+    &#34;&#34;&#34;
+    The Profile class exposes the properties required to join an ICS 32 DSU server. You will need to 
+    use this class to manage the information provided by each new user created within your program for a2. 
+    Pay close attention to the properties and functions in this class as you will need to make use of 
+    each of them in your program.
+
+    When creating your program you will need to collect user input for the properties exposed by this class. 
+    A Profile class should ensure that a username and password are set, but contains no conventions to do so. 
+    You should make sure that your code verifies that required properties are set.
+
+    &#34;&#34;&#34;
+
+    def __init__(self, dsuserver=None, username=None, password=None):
+        self.dsuserver = dsuserver  # REQUIRED
+        self.username = username  # REQUIRED
+        self.password = password  # REQUIRED
+        self.bio = &#39;&#39;  # OPTIONAL
+        self._posts = []  # OPTIONAL
+
+        self._messages = []
+
+        self._users = []  # This list used to store the usernames of users that you have messages with
+
+    #  Done: Write a function that goes through all the messages and returns a list of all the posts to/from a specific
+    #   user. You should be able to enter a username into the function as a parameter and get a list of all their
+    #   sent/received messages.
+
+    def get_chat_messages(self, username: str) -&gt; list:
+        &#34;&#34;&#34;
+        accepts a username and returns a list of all the messages in the chat with that user
+        &#34;&#34;&#34;
+
+        chat_messages = []
+
+        for message in self._messages:
+            if (message[&#39;from&#39;] == username or message[&#39;recipient&#39;] == username):
+                chat_messages.append(message)
+
+        return chat_messages
+
+    def add_post(self, post: Post) -&gt; None:
+        &#34;&#34;&#34;
+
+        add_post accepts a Post object as parameter and appends it to the posts list. Posts are stored in a
+        list object in the order they are added. So if multiple Posts objects are created, but added to the
+        Profile in a different order, it is possible for the list to not be sorted by the Post.timestamp property.
+        So take caution as to how you implement your add_post code.
+
+        &#34;&#34;&#34;
+        self._posts.append(post)
+
+    def add_msg(self, message: DirectMessage) -&gt; None:
+        &#34;&#34;&#34;
+
+        add_msg accepts a DirectMessage object as parameter and appends it to the messages list.
+
+        &#34;&#34;&#34;
+        # Done: Add code that checks both the frm and recipient instances of the message and adds the username to the
+        #  self._users variable IF the username is NOT self.username AND is NOT already on the list.
+        message_recipient = message[&#39;recipient&#39;]
+        message_from = message[&#39;from&#39;]
+
+        message_recipient_exists = False
+        message_from_exists = False
+
+        for usr in self._users:
+            if usr == message_recipient:
+                message_recipient_exists = True
+            if usr == message_from:
+                message_from_exists = True
+
+        if message_recipient_exists == False and message_recipient != self.username:
+            self._users.append(message_recipient)
+        if message_from_exists == False and message_from != self.username:
+            self._users.append(message_from)
+
+        self._messages.append(message)
+
+    def del_post(self, index: int) -&gt; bool:
+        &#34;&#34;&#34;
+
+        del_post removes a Post at a given index and returns True if successful and False if an invalid
+        index was supplied.
+
+        To determine which post to delete you must implement your own search operation on the posts
+        returned from the get_posts function to find the correct index.
+
+        &#34;&#34;&#34;
+        try:
+            del self._posts[index]
+            return True
+        except IndexError:
+            return False
+
+    def get_posts(self) -&gt; list:
+        &#34;&#34;&#34;
+
+        get_posts returns the list object containing all posts that have been added to the Profile object
+
+        &#34;&#34;&#34;
+        return self._posts
+
+    def save_profile(self, path: str) -&gt; None:
+        &#34;&#34;&#34;
+
+        save_profile accepts an existing dsu file to save the current instance of Profile to the file system.
+
+        Example usage:
+
+        profile = Profile()
+        profile.save_profile(&#39;/path/to/file.dsu&#39;)
+
+        Raises DsuFileError
+
+        &#34;&#34;&#34;
+
+        # Done: Use the function that creates the dictionary of conversations
+
+        p = Path(path)
+
+        if os.path.exists(p) and p.suffix == &#39;.dsu&#39;:
+            try:
+                f = open(p, &#39;w&#39;)
+                json.dump(self.__dict__, f)
+                f.close()
+            except Exception as ex:
+                raise DsuFileError(&#34;An error occurred while attempting to process the DSU file.&#34;, ex)
+        else:
+            raise DsuFileError(&#34;Invalid DSU file path or type&#34;)
+
+    def load_profile(self, path: str) -&gt; None:
+        &#34;&#34;&#34;
+
+        load_profile will populate the current instance of Profile with data stored in a DSU file.
+
+        Example usage:
+
+        profile = Profile()
+        profile.load_profile(&#39;/path/to/file.dsu&#39;)
+
+        Raises DsuProfileError, DsuFileError
+
+        &#34;&#34;&#34;
+        p = Path(path)
+
+        if os.path.exists(p) and p.suffix == &#39;.dsu&#39;:
+            try:
+                f = open(p, &#39;r&#39;)
+                obj = json.load(f)
+                self.username = obj[&#39;username&#39;]
+                self.password = obj[&#39;password&#39;]
+                self.dsuserver = obj[&#39;dsuserver&#39;]
+                self.bio = obj[&#39;bio&#39;]
+                for post_obj in obj[&#39;_posts&#39;]:
+                    post = Post(post_obj[&#39;entry&#39;], post_obj[&#39;timestamp&#39;])
+                    self._posts.append(post)
+                for message in obj[&#39;_messages&#39;]:
+                    msg = DirectMessage(message=message[&#34;message&#34;], timestamp=message[&#34;timestamp&#34;],
+                                        recipient=message[&#34;recipient&#34;], frm=message[&#34;frm&#34;])
+                    self._messages.append(msg)
+                for user in obj[&#39;_users&#39;]:
+                    self._users.append(user)
+                f.close()
+            except Exception as ex:
+                raise DsuProfileError(ex)
+        else:
+            raise DsuFileError()</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="Profile.Profile.add_msg"><code class="name flex">
+<span>def <span class="ident">add_msg</span></span>(<span>self, message: ds_messenger.DirectMessage) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>add_msg accepts a DirectMessage object as parameter and appends it to the messages list.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def add_msg(self, message: DirectMessage) -&gt; None:
+    &#34;&#34;&#34;
+
+    add_msg accepts a DirectMessage object as parameter and appends it to the messages list.
+
+    &#34;&#34;&#34;
+    # Done: Add code that checks both the frm and recipient instances of the message and adds the username to the
+    #  self._users variable IF the username is NOT self.username AND is NOT already on the list.
+    message_recipient = message[&#39;recipient&#39;]
+    message_from = message[&#39;from&#39;]
+
+    message_recipient_exists = False
+    message_from_exists = False
+
+    for usr in self._users:
+        if usr == message_recipient:
+            message_recipient_exists = True
+        if usr == message_from:
+            message_from_exists = True
+
+    if message_recipient_exists == False and message_recipient != self.username:
+        self._users.append(message_recipient)
+    if message_from_exists == False and message_from != self.username:
+        self._users.append(message_from)
+
+    self._messages.append(message)</code></pre>
+</details>
+</dd>
+<dt id="Profile.Profile.add_post"><code class="name flex">
+<span>def <span class="ident">add_post</span></span>(<span>self, post: <a title="Profile.Post" href="#Profile.Post">Post</a>) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>add_post accepts a Post object as parameter and appends it to the posts list. Posts are stored in a
+list object in the order they are added. So if multiple Posts objects are created, but added to the
+Profile in a different order, it is possible for the list to not be sorted by the Post.timestamp property.
+So take caution as to how you implement your add_post code.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def add_post(self, post: Post) -&gt; None:
+    &#34;&#34;&#34;
+
+    add_post accepts a Post object as parameter and appends it to the posts list. Posts are stored in a
+    list object in the order they are added. So if multiple Posts objects are created, but added to the
+    Profile in a different order, it is possible for the list to not be sorted by the Post.timestamp property.
+    So take caution as to how you implement your add_post code.
+
+    &#34;&#34;&#34;
+    self._posts.append(post)</code></pre>
+</details>
+</dd>
+<dt id="Profile.Profile.del_post"><code class="name flex">
+<span>def <span class="ident">del_post</span></span>(<span>self, index: int) ‑> bool</span>
+</code></dt>
+<dd>
+<div class="desc"><p>del_post removes a Post at a given index and returns True if successful and False if an invalid
+index was supplied.</p>
+<p>To determine which post to delete you must implement your own search operation on the posts
+returned from the get_posts function to find the correct index.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def del_post(self, index: int) -&gt; bool:
+    &#34;&#34;&#34;
+
+    del_post removes a Post at a given index and returns True if successful and False if an invalid
+    index was supplied.
+
+    To determine which post to delete you must implement your own search operation on the posts
+    returned from the get_posts function to find the correct index.
+
+    &#34;&#34;&#34;
+    try:
+        del self._posts[index]
+        return True
+    except IndexError:
+        return False</code></pre>
+</details>
+</dd>
+<dt id="Profile.Profile.get_chat_messages"><code class="name flex">
+<span>def <span class="ident">get_chat_messages</span></span>(<span>self, username: str) ‑> list</span>
+</code></dt>
+<dd>
+<div class="desc"><p>accepts a username and returns a list of all the messages in the chat with that user</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_chat_messages(self, username: str) -&gt; list:
+    &#34;&#34;&#34;
+    accepts a username and returns a list of all the messages in the chat with that user
+    &#34;&#34;&#34;
+
+    chat_messages = []
+
+    for message in self._messages:
+        if (message[&#39;from&#39;] == username or message[&#39;recipient&#39;] == username):
+            chat_messages.append(message)
+
+    return chat_messages</code></pre>
+</details>
+</dd>
+<dt id="Profile.Profile.get_posts"><code class="name flex">
+<span>def <span class="ident">get_posts</span></span>(<span>self) ‑> list</span>
+</code></dt>
+<dd>
+<div class="desc"><p>get_posts returns the list object containing all posts that have been added to the Profile object</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_posts(self) -&gt; list:
+    &#34;&#34;&#34;
+
+    get_posts returns the list object containing all posts that have been added to the Profile object
+
+    &#34;&#34;&#34;
+    return self._posts</code></pre>
+</details>
+</dd>
+<dt id="Profile.Profile.load_profile"><code class="name flex">
+<span>def <span class="ident">load_profile</span></span>(<span>self, path: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>load_profile will populate the current instance of Profile with data stored in a DSU file.</p>
+<p>Example usage:</p>
+<p>profile = Profile()
+profile.load_profile('/path/to/file.dsu')</p>
+<p>Raises DsuProfileError, DsuFileError</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load_profile(self, path: str) -&gt; None:
+    &#34;&#34;&#34;
+
+    load_profile will populate the current instance of Profile with data stored in a DSU file.
+
+    Example usage:
+
+    profile = Profile()
+    profile.load_profile(&#39;/path/to/file.dsu&#39;)
+
+    Raises DsuProfileError, DsuFileError
+
+    &#34;&#34;&#34;
+    p = Path(path)
+
+    if os.path.exists(p) and p.suffix == &#39;.dsu&#39;:
+        try:
+            f = open(p, &#39;r&#39;)
+            obj = json.load(f)
+            self.username = obj[&#39;username&#39;]
+            self.password = obj[&#39;password&#39;]
+            self.dsuserver = obj[&#39;dsuserver&#39;]
+            self.bio = obj[&#39;bio&#39;]
+            for post_obj in obj[&#39;_posts&#39;]:
+                post = Post(post_obj[&#39;entry&#39;], post_obj[&#39;timestamp&#39;])
+                self._posts.append(post)
+            for message in obj[&#39;_messages&#39;]:
+                msg = DirectMessage(message=message[&#34;message&#34;], timestamp=message[&#34;timestamp&#34;],
+                                    recipient=message[&#34;recipient&#34;], frm=message[&#34;frm&#34;])
+                self._messages.append(msg)
+            for user in obj[&#39;_users&#39;]:
+                self._users.append(user)
+            f.close()
+        except Exception as ex:
+            raise DsuProfileError(ex)
+    else:
+        raise DsuFileError()</code></pre>
+</details>
+</dd>
+<dt id="Profile.Profile.save_profile"><code class="name flex">
+<span>def <span class="ident">save_profile</span></span>(<span>self, path: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>save_profile accepts an existing dsu file to save the current instance of Profile to the file system.</p>
+<p>Example usage:</p>
+<p>profile = Profile()
+profile.save_profile('/path/to/file.dsu')</p>
+<p>Raises DsuFileError</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def save_profile(self, path: str) -&gt; None:
+    &#34;&#34;&#34;
+
+    save_profile accepts an existing dsu file to save the current instance of Profile to the file system.
+
+    Example usage:
+
+    profile = Profile()
+    profile.save_profile(&#39;/path/to/file.dsu&#39;)
+
+    Raises DsuFileError
+
+    &#34;&#34;&#34;
+
+    # Done: Use the function that creates the dictionary of conversations
+
+    p = Path(path)
+
+    if os.path.exists(p) and p.suffix == &#39;.dsu&#39;:
+        try:
+            f = open(p, &#39;w&#39;)
+            json.dump(self.__dict__, f)
+            f.close()
+        except Exception as ex:
+            raise DsuFileError(&#34;An error occurred while attempting to process the DSU file.&#34;, ex)
+    else:
+        raise DsuFileError(&#34;Invalid DSU file path or type&#34;)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="Profile.DsuFileError" href="#Profile.DsuFileError">DsuFileError</a></code></h4>
+</li>
+<li>
+<h4><code><a title="Profile.DsuProfileError" href="#Profile.DsuProfileError">DsuProfileError</a></code></h4>
+</li>
+<li>
+<h4><code><a title="Profile.Post" href="#Profile.Post">Post</a></code></h4>
+<ul class="two-column">
+<li><code><a title="Profile.Post.entry" href="#Profile.Post.entry">entry</a></code></li>
+<li><code><a title="Profile.Post.get_entry" href="#Profile.Post.get_entry">get_entry</a></code></li>
+<li><code><a title="Profile.Post.get_time" href="#Profile.Post.get_time">get_time</a></code></li>
+<li><code><a title="Profile.Post.set_entry" href="#Profile.Post.set_entry">set_entry</a></code></li>
+<li><code><a title="Profile.Post.set_time" href="#Profile.Post.set_time">set_time</a></code></li>
+<li><code><a title="Profile.Post.timestamp" href="#Profile.Post.timestamp">timestamp</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Profile.Profile" href="#Profile.Profile">Profile</a></code></h4>
+<ul class="two-column">
+<li><code><a title="Profile.Profile.add_msg" href="#Profile.Profile.add_msg">add_msg</a></code></li>
+<li><code><a title="Profile.Profile.add_post" href="#Profile.Profile.add_post">add_post</a></code></li>
+<li><code><a title="Profile.Profile.del_post" href="#Profile.Profile.del_post">del_post</a></code></li>
+<li><code><a title="Profile.Profile.get_chat_messages" href="#Profile.Profile.get_chat_messages">get_chat_messages</a></code></li>
+<li><code><a title="Profile.Profile.get_posts" href="#Profile.Profile.get_posts">get_posts</a></code></li>
+<li><code><a title="Profile.Profile.load_profile" href="#Profile.Profile.load_profile">load_profile</a></code></li>
+<li><code><a title="Profile.Profile.save_profile" href="#Profile.Profile.save_profile">save_profile</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>

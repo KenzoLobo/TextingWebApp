@@ -1,0 +1,1829 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>GUI API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>GUI</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># A GUI to facilitate a graphical means to send and recieve messages from
+# the DSP server
+
+# Hayden Powers
+# powersh@uci.edu
+# 56169764
+
+import tkinter as tk
+from tkinter import ttk, filedialog, TclError
+from Profile import Post, Profile
+from ds_messenger import DirectMessenger, DirectMessage
+import copy
+
+
+class Body(tk.Frame):
+    &#34;&#34;&#34;
+    A subclass of tk.Frame that is responsible for drawing all of the widgets
+    in the body portion of the root frame.
+    &#34;&#34;&#34;
+
+    def __init__(self, root, select_callback=None):
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self._select_callback = select_callback
+
+        # the currently active profile
+        self.current_profile = Profile()
+        self.current_path = &#34;&#34;
+
+        # a list of the messages available in the active DSU file
+        self._messages = []
+
+        # A list of usernames that the current profile has sent/recieved messages
+        self._contacts = []
+
+        # This is a variable to be set by node select when clicked on a particular
+        # contact, is accessed in order to send to correct recipient
+        self.selected_contact = &#39;&#39;
+
+        # This is what will be tied to each username so that when a contact is clicked on the
+        # TreeView widget, it will display the chat history
+        self._chat_history = []
+
+        # After all initialization is complete, call the _draw method to pack the widgets
+        # into the Body instance 
+        self._draw()
+
+    def generate_chat_history(self, messages):
+        &#34;&#34;&#34;
+        This function will take the sent messages from the user and recieved messages from other
+        users and combine them chronologically into ._chat_history and prints to message view in a
+        friendly format
+        &#34;&#34;&#34;
+        sorted_list = self.sort_by_timestamp(messages)
+
+        for element in sorted_list:
+            username_frm = element[&#39;frm&#39;]
+            message = element[&#39;message&#39;]
+            formatted = f&#34;{username_frm} : {message} \n\n&#34;
+
+            if formatted not in self._chat_history:
+                self._chat_history.append(formatted)
+
+    def sort_by_timestamp(self, message_list):
+        &#34;&#34;&#34;
+        This function takes a list of messages and sorts it by timestamp.
+        &#34;&#34;&#34;
+        sorted_list = sorted(message_list, key=lambda d: d[&#39;timestamp&#39;])
+        return sorted_list
+
+
+    def node_select(self, event):
+        &#34;&#34;&#34;
+        Nodes will have the username of all the accounts that you have sent/recieved messages to.
+        Clicking on a node will open the chat history (sent and recieved messages in chronologial order)
+        &#34;&#34;&#34;
+        digits = self.posts_tree.selection()[0][1:]
+        leading_zeros = True
+        value = &#39;&#39;
+
+        # The .selection()[0] method of our treeview widget returns a 4 character string as an id
+        # here I just got rid of the leading zeroes and got an accurate index value by converting
+        # it from hexadecimal
+        for i in digits:
+            if i == &#39;0&#39; and leading_zeros:
+                continue
+            elif i != &#39;0&#39;:
+                leading_zeros = False
+            value = value + i
+
+        index = int(value, 16) - 1
+
+        self.selected_contact = self._contacts[index]
+        self.current_profile.load_profile(self.current_path)
+
+        self._chat_history = []
+
+        contact_messages = self.current_profile.get_chat_messages(self.selected_contact)
+        self.generate_chat_history(contact_messages)
+
+        print(self._chat_history)
+        self.message_viewer.delete(0.0, &#34;end&#34;)
+
+        for chat in self._chat_history:
+            self.message_viewer.insert(0.0, chat)
+
+        print(&#34;CURENT CONTACT SELECTED: &#34;, self.selected_contact)
+
+
+    def get_text_entry(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns the text that is currently displayed in the message_editor widget.
+        &#34;&#34;&#34;
+        return self.message_editor.get(&#39;1.0&#39;, &#39;end&#39;).rstrip()
+
+    def set_text_entry(self, text: str):
+        &#34;&#34;&#34;
+        Sets the text to be displayed in the message_viewer widget.
+        &#34;&#34;&#34;
+        self.message_viewer.delete(0.0, &#34;end&#34;)
+        self.message_viewer.insert(0.0, text)
+
+    def set_messages(self, messages: list):
+        &#34;&#34;&#34;
+        Populates the self._messages attribute with messages from the active DSU file.
+        &#34;&#34;&#34;
+        self._messages = copy.deepcopy(messages)
+
+    def set_contacts(self, users: list):
+        &#34;&#34;&#34;
+        Populates the ._contacts attribute with the users from the acive DSU file
+        &#34;&#34;&#34;
+        self._contacts = copy.deepcopy(users)
+        for contact in self._contacts:
+            try:
+                self._insert_post_tree(len(self._messages), contact)
+            except TclError as e:
+                print(&#34;set_contacts error&#34;)
+                continue
+
+    def add_contact(self, username: str):
+        &#34;&#34;&#34;
+        Adds an individual contact to the list of contacts.
+        &#34;&#34;&#34;
+        self._contacts.append(username)
+        try:
+            self._insert_post_tree(len(self._messages), username)
+        except TclError as e:
+            print(&#34;add_contacts error&#34;)
+            return
+
+    def insert_post(self, message: dict):
+        &#34;&#34;&#34;
+        Inserts a single post to the post_tree widget.
+        &#34;&#34;&#34;
+        self._messages.append(dict)
+        id = len(self._messages) - 1  # adjust id for 0-base of treeview widget
+        self._insert_post_tree(id, message)
+
+    def get_contacts(self):
+        &#34;&#34;&#34;
+        Get list of current contacts for current profile in main app in order to save to dsu file
+        &#34;&#34;&#34;
+
+        return self._contacts
+
+    def reset_ui(self):
+        &#34;&#34;&#34;
+        Resets all UI widgets to their default state. Useful for when clearing the UI is neccessary such
+        as when a new DSU file is loaded, for example.
+        &#34;&#34;&#34;
+        self.set_text_entry(&#34;&#34;)
+        self.message_editor.configure(state=tk.NORMAL)
+        self._messages = []
+        for item in self.posts_tree.get_children():
+            self.posts_tree.delete(item)
+
+    def _insert_post_tree(self, id, contact):
+        &#34;&#34;&#34;
+        Inserts a post entry into the posts_tree widget.
+        &#34;&#34;&#34;
+        # Title for messages in message tree will be the username of the &#39;frm&#39; variable
+        self.posts_tree.insert(&#39;&#39;, id, text=contact)
+
+
+    def update_messages(self):
+        &#34;&#34;&#34;
+        This function will run on a timer to check for incoming messages to the user and update the profile and GUI
+        accordingly.
+        &#34;&#34;&#34;
+        current_user = Profile()
+        current_user.load_profile(self.current_path)
+        update_messenger = DirectMessenger(username=current_user.username, password=current_user.password)
+        newmessages = update_messenger.retrieve_new()
+
+        for message in newmessages:
+            if message not in current_user._messages:
+                current_user.add_msg(message)
+
+        current_user.save_profile(self.current_path)
+
+        if self.selected_contact != &#39;&#39;:
+            contact_messages = current_user.get_chat_messages(self.selected_contact)
+            self.generate_chat_history(contact_messages)
+
+            for chat in self._chat_history:
+                if chat not in self.message_viewer.get(&#39;1.0&#39;, &#39;end&#39;):
+                    self.message_viewer.insert(0.0, chat)
+
+        tree_contact_list = []
+
+        for i in self.posts_tree.get_children():
+            tree_contact_list.append(self.posts_tree.item(i)[&#34;text&#34;])
+        for user in current_user._users:
+            if user not in tree_contact_list:
+                self.add_contact(user)
+        # print(&#34;looping&#34;)
+        self.root.after(ms=1000, func=self.update_messages)
+
+    def _draw(self):
+        &#34;&#34;&#34;
+        Call only once upon initialization to add widgets to the frame
+        &#34;&#34;&#34;
+        posts_frame = tk.Frame(master=self, width=250)
+        posts_frame.pack(fill=tk.BOTH, side=tk.LEFT)
+        self.posts_tree = ttk.Treeview(posts_frame)
+        self.posts_tree.bind(&#34;&lt;&lt;TreeviewSelect&gt;&gt;&#34;, self.node_select)
+        self.posts_tree.pack(fill=tk.BOTH, side=tk.TOP, expand=True, padx=5, pady=5)
+
+        entry_frame = tk.Frame(master=self, bg=&#34;green&#34;)
+        entry_frame.pack(fill=tk.BOTH, side=tk.TOP, expand=True)
+
+        # NEW FRAMES ------
+        view_frame = tk.Frame(master=entry_frame, bg=&#34;orange&#34;)
+        view_frame.pack(fill=tk.BOTH, side=tk.TOP, expand=True)
+
+        viewer_scroll_frame = tk.Frame(master=view_frame, bg=&#34;yellow&#34;, width=10)
+        viewer_scroll_frame.pack(fill=tk.BOTH, side=tk.RIGHT, expand=False)
+
+        message_frame = tk.Frame(master=entry_frame, bg=&#34;blue&#34;)
+        message_frame.pack(fill=tk.BOTH, side=tk.BOTTOM, expand=True)
+
+        editor_scroll_frame = tk.Frame(master=message_frame, bg=&#34;red&#34;, width=10)
+        editor_scroll_frame.pack(fill=tk.BOTH, side=tk.RIGHT, expand=False)
+        # -----------------
+
+        # NEW WIDGETS ------
+        self.message_viewer = tk.Text(master=view_frame, height=20, width=0)
+        self.message_viewer.pack(fill=tk.BOTH, side=tk.LEFT, expand=True, padx=1, pady=1)
+
+        self.message_editor = tk.Text(master=message_frame, height=10, width=0)
+        self.message_editor.pack(fill=tk.BOTH, side=tk.TOP, expand=True)
+
+        message_viewer_scrollbar = tk.Scrollbar(master=viewer_scroll_frame, command=self.message_viewer.yview)
+        self.message_viewer[&#39;yscrollcommand&#39;] = message_viewer_scrollbar.set
+        message_viewer_scrollbar.pack(fill=tk.Y, side=tk.LEFT, expand=False, padx=0, pady=0)
+
+        message_editor_scrollbar = tk.Scrollbar(master=editor_scroll_frame, command=self.message_editor.yview)
+        self.message_editor[&#39;yscrollcommand&#39;] = message_editor_scrollbar.set
+        message_editor_scrollbar.pack(fill=tk.Y, side=tk.LEFT, expand=False, padx=0, pady=0)
+        # ----------------------------------------------
+
+class Footer(tk.Frame):
+    &#34;&#34;&#34;
+    A subclass of tk.Frame that is responsible for drawing all of the widgets
+    in the footer portion of the root frame.
+    &#34;&#34;&#34;
+    def __init__(self, root, send_callback=None, add_callback=None):
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self._send_callback = send_callback
+        self._add_callback = add_callback
+
+        # IntVar is a variable class that provides access to special variables
+        # for Tkinter widgets. is_online is used to hold the state of the chk_button widget.
+        # The value assigned to is_online when the chk_button widget is changed by the user
+        # can be retrieved using he get() function:
+        # chk_value = self.is_online.get()
+        self.is_online = tk.IntVar()
+        # After all initialization is complete, call the _draw method to pack the widgets
+        # into the Footer instance 
+        self._draw()
+
+    def add_click(self):
+        &#34;&#34;&#34;
+        Calls the callback function specified in the online_callback class attribute, if
+        available, when the chk_button widget has been clicked.
+        &#34;&#34;&#34;
+        if self._add_callback is not None:
+            self._add_callback()
+
+    def send_click(self):
+        &#34;&#34;&#34;
+        Calls the callback function specified in the save_callback class attribute, if
+        available, when the save_button has been clicked.
+        &#34;&#34;&#34;
+        if self._send_callback is not None:
+            self._send_callback()
+
+    def _draw(self):
+        &#34;&#34;&#34;
+        Call only once upon initialization to add widgets to the frame
+        &#34;&#34;&#34;
+        send_button = tk.Button(master=self, text=&#34;Send Message&#34;, width=20)
+        send_button.configure(command=self.send_click)
+        send_button.pack(fill=tk.BOTH, side=tk.RIGHT, padx=5, pady=5)
+
+        # ADD USER BUTTON INSTEAD OF READY LABEL
+        add_user_button = tk.Button(master=self, text=&#34;Add User&#34;, width=10)
+        add_user_button.configure(command=self.add_click)
+        add_user_button.pack(fill=tk.BOTH, side=tk.LEFT, padx=10, pady=5)
+
+
+class MainApp(tk.Frame):
+    &#34;&#34;&#34;
+    A subclass of tk.Frame that is responsible for drawing all of the widgets
+    in the main portion of the root frame. Also manages all method calls for
+    the Profile class.
+    &#34;&#34;&#34;
+    def __init__(self, root):
+        tk.Frame.__init__(self, root)
+        self.root = root
+
+        # Initialize a new Profile and assign it to a class attribute.
+        self._current_profile = Profile()
+
+        # To make sure that a file is open before using send/add
+        self._profile_filename = False
+
+        # After all initialization is complete, call the _draw method to pack the widgets
+        # into the root frame
+        self._draw()
+
+    def send_message(self):
+        &#34;&#34;&#34;
+        Takes the message from the message editor and sends it through the DSP server
+        to the specified username
+        &#34;&#34;&#34;
+        # May need to plan this to accept an index from a contacts list instead of
+        # passing in a username. 
+        message = self.body.get_text_entry()
+        self.body.message_editor.delete(0.0, &#34;end&#34;)
+        dm_user = DirectMessenger(username=self._current_profile.username,
+                                  password=self._current_profile.password)
+
+        dm_user.send(message, self.body.selected_contact)
+
+        currentprofile = Profile()
+        if self._profile_filename is not False:
+            currentprofile.load_profile(self._profile_filename)
+            currentprofile.add_msg(dm_user.sent_messages[0])
+            currentprofile.save_profile(self._profile_filename)
+        print(&#34;MESSAGE SENT&#34;)
+
+    def new_profile(self):
+        &#34;&#34;&#34;
+        Creates a new DSU file when the &#39;New&#39; menu item is clicked.
+        &#34;&#34;&#34;
+        if self._profile_filename == False:
+            filename = tk.filedialog.asksaveasfile(filetypes=[(&#39;Distributed Social Profile&#39;, &#39;*.dsu&#39;)],
+                                                   defaultextension=&#39;.dsu&#39;)
+            try:
+                self._profile_filename = filename.name
+                self._current_profile = Profile()
+                self.body.reset_ui()
+                self.body.set_contacts(self._current_profile._users)
+                self.body.current_profile = self._current_profile
+                self.body.current_path = self._profile_filename
+            except AttributeError as e:
+                print(&#34;New profile operation interrupted.&#34;)
+
+            # Opens a new popup window for user to enter their own username and password
+            if self._profile_filename is False:
+                print(&#34;No filename provided&#34;)
+                return
+            else:
+                self.newfile_window()
+        else:
+            print(&#34;Please restart the program before trying to create a new profile.&#34;)
+
+    def newfile_window(self):
+        &#34;&#34;&#34;
+        A popup window that will prompt the user for username and password when creating a new file
+        &#34;&#34;&#34;
+        self.newfile_popup = tk.Toplevel()
+
+        user_label = tk.Label(master=self.newfile_popup, text=&#34;Username&#34;)
+        user_label.pack(fill=&#39;x&#39;, padx=50, pady=5)
+        self.user_input = tk.Text(master=self.newfile_popup, height=1, width=20)
+        self.user_input.pack(fill=&#39;x&#39;, padx=50, pady=5)
+
+        password_label = tk.Label(master=self.newfile_popup, text=&#34;Password&#34;)
+        password_label.pack(fill=&#39;x&#39;, padx=50, pady=5)
+        self.password_input = tk.Text(master=self.newfile_popup, height=1, width=20)
+        self.password_input.pack(fill=&#39;x&#39;, padx=50, pady=5)
+
+        button_submit = tk.Button(master=self.newfile_popup, text=&#34;Submit&#34;, width=5, command=lambda: self.submit_info())
+        button_submit.pack(fill=&#39;x&#39;)
+
+    # vvvv-------------------ADDED AFTER HARSHAL GUI---------------------vvvvv
+
+    def add_user_window(self):
+        &#34;&#34;&#34;
+        A popup window that will prompt the user for username to add to contacts list
+        &#34;&#34;&#34;
+        self.add_popup = tk.Toplevel()
+
+        contact_label = tk.Label(master=self.add_popup, text=&#34;Recipient Username:&#34;)
+        contact_label.pack(fill=&#39;x&#39;, padx=50, pady=5)
+        self.contact_input = tk.Text(master=self.add_popup, height=1, width=20)
+        self.contact_input.pack(fill=&#39;x&#39;, padx=50, pady=5)
+
+        add_contact = tk.Button(master=self.add_popup, text=&#34;Add Contact&#34;, width=5, command=lambda: self.add_user())
+        add_contact.pack(fill=&#39;x&#39;)
+
+    def submit_info(self):
+        &#34;&#34;&#34;
+        The command used by the submit button in the popup window to set the current profile username
+        and password and save profile to the dsu file
+        &#34;&#34;&#34;
+        self._current_profile.username = self.user_input.get(&#34;1.0&#34;, &#39;end-1c&#39;)
+        self._current_profile.password = self.password_input.get(&#34;1.0&#34;, &#39;end-1c&#39;)
+
+        messenger = DirectMessenger(username=self._current_profile.username, password=self._current_profile.password)
+        username_valid = True
+        try:
+            messenger.retrieve_all()
+        except UnboundLocalError:
+            self._current_profile.username = &#34;dusername123&#34;
+            self._current_profile.password = &#34;dpassword123&#34;
+
+        self._current_profile.save_profile(self._profile_filename)
+        self.body.update_messages()
+        self.newfile_popup.destroy()
+
+    def add_user(self):
+        &#34;&#34;&#34;
+        A callback function for responding to the add_user button. Will connect with the body
+        to insert an empty chat history with a given username supplied by the message editor
+        &#34;&#34;&#34;
+        if self._profile_filename is False:
+            print(&#34;No filename provided.&#34;)
+            return
+
+        self._current_profile.load_profile(self._profile_filename)  # Load first
+        contact = self.contact_input.get(&#34;1.0&#34;, &#39;end-1c&#39;)
+
+        # If contact is nothing, do not add
+        if contact == &#39;&#39;:
+            return
+        elif contact not in self.body._contacts:
+            self.body.add_contact(contact)
+            self._current_profile._users = self.body.get_contacts()
+
+            print(&#34;CURRENT USERS from MAINAPP: &#34;, self._current_profile._users)
+
+        else:
+            print(&#34;Contact already exists.&#34;)
+
+        self._current_profile.save_profile(self._profile_filename)  # Save last
+        self.add_popup.destroy()
+
+    def open_profile(self):
+        &#34;&#34;&#34;
+        Opens an existing DSU file when the &#39;Open&#39; menu item is clicked and loads the profile
+        data into the UI.
+        &#34;&#34;&#34;
+        if self._profile_filename == False:
+            filename = tk.filedialog.askopenfile(filetypes=[(&#39;Distributed Social Profile&#39;, &#39;*.dsu&#39;)])
+            try:
+                self._profile_filename = filename.name
+                self._current_profile = Profile()
+                self._current_profile.load_profile(self._profile_filename)
+                self.body.reset_ui()  # Reset UI
+                # self.body.set_messages(self._current_profile._messages)
+                self.body.set_contacts(self._current_profile._users)
+                self.body.current_profile = self._current_profile
+                self.body.current_path = self._profile_filename
+
+                # UPDATE MESSAGES HERE
+                self.body.update_messages()
+
+            except AttributeError as e:
+                print(&#34;Open operation interrupted.&#34;)
+        else:
+            print(&#34;Please restart the program before loading a new profile!&#34;)
+
+    def close(self):
+        &#34;&#34;&#34;
+        Closes the program when the &#39;Close&#39; menu item is clicked.
+        &#34;&#34;&#34;
+        self.root.destroy()
+
+    def save_profile(self):
+        &#34;&#34;&#34;
+        Saves the text currently in the message_editor widget to the active DSU file.
+        &#34;&#34;&#34;
+        # Check for filename
+        if self._profile_filename is False:
+            print(&#34;No filename provided&#34;)
+            return
+
+    def _draw(self):
+        &#34;&#34;&#34;
+        Call only once, upon initialization to add widgets to root frame
+        &#34;&#34;&#34;
+        # Build a menu and add it to the root frame.
+        menu_bar = tk.Menu(self.root)
+        self.root[&#39;menu&#39;] = menu_bar
+        menu_file = tk.Menu(menu_bar)
+        menu_bar.add_cascade(menu=menu_file, label=&#39;File&#39;)
+        menu_file.add_command(label=&#39;New&#39;, command=self.new_profile)
+        menu_file.add_command(label=&#39;Open...&#39;, command=self.open_profile)
+        menu_file.add_command(label=&#39;Close&#39;, command=self.close)
+
+        # The Body and Footer classes must be initialized and packed into the root window.
+        self.body = Body(self.root, self._current_profile)
+        self.body.pack(fill=tk.BOTH, side=tk.TOP, expand=True)
+        self.footer = Footer(self.root, send_callback=self.send_message, add_callback=self.add_user_window)
+        self.footer.pack(fill=tk.BOTH, side=tk.BOTTOM)
+
+
+if __name__ == &#34;__main__&#34;:
+    # All Tkinter programs start with a root window. We will name ours &#39;main&#39;.
+    main = tk.Tk()
+
+    # &#39;title&#39; assigns a text value to the Title Bar area of a window.
+    main.title(&#34;ICS 32 Distributed Social Demo&#34;)
+
+    # This is just an arbitrary starting point. You can change the value around to see how
+    # the starting size of the window changes. I just thought this looked good for our UI.
+    main.geometry(&#34;720x480&#34;)
+
+    # adding this option removes some legacy behavior with menus that modern OSes don&#39;t support. 
+    # If you&#39;re curious, feel free to comment out and see how the menu changes.
+    main.option_add(&#39;*tearOff&#39;, False)
+
+    # Initialize the MainApp class, which is the starting point for the widgets used in the program.
+    # All of the classes that we use, subclass Tk.Frame, since our root frame is main, we initialize 
+    # the class with it.
+    MainApp(main)
+
+    # When update is called, we finalize the states of all widgets that have been configured within the root frame.
+    # Here, Update ensures that we get an accurate width and height reading based on the types of widgets
+    # we have used.
+    # minsize prevents the root window from resizing too small. Feel free to comment it out and see how
+    # the resizing behavior of the window changes.
+    main.update()
+    main.minsize(main.winfo_width(), main.winfo_height())
+    # And finally, start up the event loop for the program (more on this in lecture).
+    main.mainloop()</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="GUI.Body"><code class="flex name class">
+<span>class <span class="ident">Body</span></span>
+<span>(</span><span>root, select_callback=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A subclass of tk.Frame that is responsible for drawing all of the widgets
+in the body portion of the root frame.</p>
+<p>Construct a frame widget with the parent MASTER.</p>
+<p>Valid resource names: background, bd, bg, borderwidth, class,
+colormap, container, cursor, height, highlightbackground,
+highlightcolor, highlightthickness, relief, takefocus, visual, width.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Body(tk.Frame):
+    &#34;&#34;&#34;
+    A subclass of tk.Frame that is responsible for drawing all of the widgets
+    in the body portion of the root frame.
+    &#34;&#34;&#34;
+
+    def __init__(self, root, select_callback=None):
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self._select_callback = select_callback
+
+        # the currently active profile
+        self.current_profile = Profile()
+        self.current_path = &#34;&#34;
+
+        # a list of the messages available in the active DSU file
+        self._messages = []
+
+        # A list of usernames that the current profile has sent/recieved messages
+        self._contacts = []
+
+        # This is a variable to be set by node select when clicked on a particular
+        # contact, is accessed in order to send to correct recipient
+        self.selected_contact = &#39;&#39;
+
+        # This is what will be tied to each username so that when a contact is clicked on the
+        # TreeView widget, it will display the chat history
+        self._chat_history = []
+
+        # After all initialization is complete, call the _draw method to pack the widgets
+        # into the Body instance 
+        self._draw()
+
+    def generate_chat_history(self, messages):
+        &#34;&#34;&#34;
+        This function will take the sent messages from the user and recieved messages from other
+        users and combine them chronologically into ._chat_history and prints to message view in a
+        friendly format
+        &#34;&#34;&#34;
+        sorted_list = self.sort_by_timestamp(messages)
+
+        for element in sorted_list:
+            username_frm = element[&#39;frm&#39;]
+            message = element[&#39;message&#39;]
+            formatted = f&#34;{username_frm} : {message} \n\n&#34;
+
+            if formatted not in self._chat_history:
+                self._chat_history.append(formatted)
+
+    def sort_by_timestamp(self, message_list):
+        &#34;&#34;&#34;
+        This function takes a list of messages and sorts it by timestamp.
+        &#34;&#34;&#34;
+        sorted_list = sorted(message_list, key=lambda d: d[&#39;timestamp&#39;])
+        return sorted_list
+
+
+    def node_select(self, event):
+        &#34;&#34;&#34;
+        Nodes will have the username of all the accounts that you have sent/recieved messages to.
+        Clicking on a node will open the chat history (sent and recieved messages in chronologial order)
+        &#34;&#34;&#34;
+        digits = self.posts_tree.selection()[0][1:]
+        leading_zeros = True
+        value = &#39;&#39;
+
+        # The .selection()[0] method of our treeview widget returns a 4 character string as an id
+        # here I just got rid of the leading zeroes and got an accurate index value by converting
+        # it from hexadecimal
+        for i in digits:
+            if i == &#39;0&#39; and leading_zeros:
+                continue
+            elif i != &#39;0&#39;:
+                leading_zeros = False
+            value = value + i
+
+        index = int(value, 16) - 1
+
+        self.selected_contact = self._contacts[index]
+        self.current_profile.load_profile(self.current_path)
+
+        self._chat_history = []
+
+        contact_messages = self.current_profile.get_chat_messages(self.selected_contact)
+        self.generate_chat_history(contact_messages)
+
+        print(self._chat_history)
+        self.message_viewer.delete(0.0, &#34;end&#34;)
+
+        for chat in self._chat_history:
+            self.message_viewer.insert(0.0, chat)
+
+        print(&#34;CURENT CONTACT SELECTED: &#34;, self.selected_contact)
+
+
+    def get_text_entry(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns the text that is currently displayed in the message_editor widget.
+        &#34;&#34;&#34;
+        return self.message_editor.get(&#39;1.0&#39;, &#39;end&#39;).rstrip()
+
+    def set_text_entry(self, text: str):
+        &#34;&#34;&#34;
+        Sets the text to be displayed in the message_viewer widget.
+        &#34;&#34;&#34;
+        self.message_viewer.delete(0.0, &#34;end&#34;)
+        self.message_viewer.insert(0.0, text)
+
+    def set_messages(self, messages: list):
+        &#34;&#34;&#34;
+        Populates the self._messages attribute with messages from the active DSU file.
+        &#34;&#34;&#34;
+        self._messages = copy.deepcopy(messages)
+
+    def set_contacts(self, users: list):
+        &#34;&#34;&#34;
+        Populates the ._contacts attribute with the users from the acive DSU file
+        &#34;&#34;&#34;
+        self._contacts = copy.deepcopy(users)
+        for contact in self._contacts:
+            try:
+                self._insert_post_tree(len(self._messages), contact)
+            except TclError as e:
+                print(&#34;set_contacts error&#34;)
+                continue
+
+    def add_contact(self, username: str):
+        &#34;&#34;&#34;
+        Adds an individual contact to the list of contacts.
+        &#34;&#34;&#34;
+        self._contacts.append(username)
+        try:
+            self._insert_post_tree(len(self._messages), username)
+        except TclError as e:
+            print(&#34;add_contacts error&#34;)
+            return
+
+    def insert_post(self, message: dict):
+        &#34;&#34;&#34;
+        Inserts a single post to the post_tree widget.
+        &#34;&#34;&#34;
+        self._messages.append(dict)
+        id = len(self._messages) - 1  # adjust id for 0-base of treeview widget
+        self._insert_post_tree(id, message)
+
+    def get_contacts(self):
+        &#34;&#34;&#34;
+        Get list of current contacts for current profile in main app in order to save to dsu file
+        &#34;&#34;&#34;
+
+        return self._contacts
+
+    def reset_ui(self):
+        &#34;&#34;&#34;
+        Resets all UI widgets to their default state. Useful for when clearing the UI is neccessary such
+        as when a new DSU file is loaded, for example.
+        &#34;&#34;&#34;
+        self.set_text_entry(&#34;&#34;)
+        self.message_editor.configure(state=tk.NORMAL)
+        self._messages = []
+        for item in self.posts_tree.get_children():
+            self.posts_tree.delete(item)
+
+    def _insert_post_tree(self, id, contact):
+        &#34;&#34;&#34;
+        Inserts a post entry into the posts_tree widget.
+        &#34;&#34;&#34;
+        # Title for messages in message tree will be the username of the &#39;frm&#39; variable
+        self.posts_tree.insert(&#39;&#39;, id, text=contact)
+
+
+    def update_messages(self):
+        &#34;&#34;&#34;
+        This function will run on a timer to check for incoming messages to the user and update the profile and GUI
+        accordingly.
+        &#34;&#34;&#34;
+        current_user = Profile()
+        current_user.load_profile(self.current_path)
+        update_messenger = DirectMessenger(username=current_user.username, password=current_user.password)
+        newmessages = update_messenger.retrieve_new()
+
+        for message in newmessages:
+            if message not in current_user._messages:
+                current_user.add_msg(message)
+
+        current_user.save_profile(self.current_path)
+
+        if self.selected_contact != &#39;&#39;:
+            contact_messages = current_user.get_chat_messages(self.selected_contact)
+            self.generate_chat_history(contact_messages)
+
+            for chat in self._chat_history:
+                if chat not in self.message_viewer.get(&#39;1.0&#39;, &#39;end&#39;):
+                    self.message_viewer.insert(0.0, chat)
+
+        tree_contact_list = []
+
+        for i in self.posts_tree.get_children():
+            tree_contact_list.append(self.posts_tree.item(i)[&#34;text&#34;])
+        for user in current_user._users:
+            if user not in tree_contact_list:
+                self.add_contact(user)
+        # print(&#34;looping&#34;)
+        self.root.after(ms=1000, func=self.update_messages)
+
+    def _draw(self):
+        &#34;&#34;&#34;
+        Call only once upon initialization to add widgets to the frame
+        &#34;&#34;&#34;
+        posts_frame = tk.Frame(master=self, width=250)
+        posts_frame.pack(fill=tk.BOTH, side=tk.LEFT)
+        self.posts_tree = ttk.Treeview(posts_frame)
+        self.posts_tree.bind(&#34;&lt;&lt;TreeviewSelect&gt;&gt;&#34;, self.node_select)
+        self.posts_tree.pack(fill=tk.BOTH, side=tk.TOP, expand=True, padx=5, pady=5)
+
+        entry_frame = tk.Frame(master=self, bg=&#34;green&#34;)
+        entry_frame.pack(fill=tk.BOTH, side=tk.TOP, expand=True)
+
+        # NEW FRAMES ------
+        view_frame = tk.Frame(master=entry_frame, bg=&#34;orange&#34;)
+        view_frame.pack(fill=tk.BOTH, side=tk.TOP, expand=True)
+
+        viewer_scroll_frame = tk.Frame(master=view_frame, bg=&#34;yellow&#34;, width=10)
+        viewer_scroll_frame.pack(fill=tk.BOTH, side=tk.RIGHT, expand=False)
+
+        message_frame = tk.Frame(master=entry_frame, bg=&#34;blue&#34;)
+        message_frame.pack(fill=tk.BOTH, side=tk.BOTTOM, expand=True)
+
+        editor_scroll_frame = tk.Frame(master=message_frame, bg=&#34;red&#34;, width=10)
+        editor_scroll_frame.pack(fill=tk.BOTH, side=tk.RIGHT, expand=False)
+        # -----------------
+
+        # NEW WIDGETS ------
+        self.message_viewer = tk.Text(master=view_frame, height=20, width=0)
+        self.message_viewer.pack(fill=tk.BOTH, side=tk.LEFT, expand=True, padx=1, pady=1)
+
+        self.message_editor = tk.Text(master=message_frame, height=10, width=0)
+        self.message_editor.pack(fill=tk.BOTH, side=tk.TOP, expand=True)
+
+        message_viewer_scrollbar = tk.Scrollbar(master=viewer_scroll_frame, command=self.message_viewer.yview)
+        self.message_viewer[&#39;yscrollcommand&#39;] = message_viewer_scrollbar.set
+        message_viewer_scrollbar.pack(fill=tk.Y, side=tk.LEFT, expand=False, padx=0, pady=0)
+
+        message_editor_scrollbar = tk.Scrollbar(master=editor_scroll_frame, command=self.message_editor.yview)
+        self.message_editor[&#39;yscrollcommand&#39;] = message_editor_scrollbar.set
+        message_editor_scrollbar.pack(fill=tk.Y, side=tk.LEFT, expand=False, padx=0, pady=0)
+        # ----------------------------------------------</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>tkinter.Frame</li>
+<li>tkinter.Widget</li>
+<li>tkinter.BaseWidget</li>
+<li>tkinter.Misc</li>
+<li>tkinter.Pack</li>
+<li>tkinter.Place</li>
+<li>tkinter.Grid</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="GUI.Body.add_contact"><code class="name flex">
+<span>def <span class="ident">add_contact</span></span>(<span>self, username: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Adds an individual contact to the list of contacts.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def add_contact(self, username: str):
+    &#34;&#34;&#34;
+    Adds an individual contact to the list of contacts.
+    &#34;&#34;&#34;
+    self._contacts.append(username)
+    try:
+        self._insert_post_tree(len(self._messages), username)
+    except TclError as e:
+        print(&#34;add_contacts error&#34;)
+        return</code></pre>
+</details>
+</dd>
+<dt id="GUI.Body.generate_chat_history"><code class="name flex">
+<span>def <span class="ident">generate_chat_history</span></span>(<span>self, messages)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This function will take the sent messages from the user and recieved messages from other
+users and combine them chronologically into ._chat_history and prints to message view in a
+friendly format</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def generate_chat_history(self, messages):
+    &#34;&#34;&#34;
+    This function will take the sent messages from the user and recieved messages from other
+    users and combine them chronologically into ._chat_history and prints to message view in a
+    friendly format
+    &#34;&#34;&#34;
+    sorted_list = self.sort_by_timestamp(messages)
+
+    for element in sorted_list:
+        username_frm = element[&#39;frm&#39;]
+        message = element[&#39;message&#39;]
+        formatted = f&#34;{username_frm} : {message} \n\n&#34;
+
+        if formatted not in self._chat_history:
+            self._chat_history.append(formatted)</code></pre>
+</details>
+</dd>
+<dt id="GUI.Body.get_contacts"><code class="name flex">
+<span>def <span class="ident">get_contacts</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Get list of current contacts for current profile in main app in order to save to dsu file</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_contacts(self):
+    &#34;&#34;&#34;
+    Get list of current contacts for current profile in main app in order to save to dsu file
+    &#34;&#34;&#34;
+
+    return self._contacts</code></pre>
+</details>
+</dd>
+<dt id="GUI.Body.get_text_entry"><code class="name flex">
+<span>def <span class="ident">get_text_entry</span></span>(<span>self) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the text that is currently displayed in the message_editor widget.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_text_entry(self) -&gt; str:
+    &#34;&#34;&#34;
+    Returns the text that is currently displayed in the message_editor widget.
+    &#34;&#34;&#34;
+    return self.message_editor.get(&#39;1.0&#39;, &#39;end&#39;).rstrip()</code></pre>
+</details>
+</dd>
+<dt id="GUI.Body.insert_post"><code class="name flex">
+<span>def <span class="ident">insert_post</span></span>(<span>self, message: dict)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Inserts a single post to the post_tree widget.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def insert_post(self, message: dict):
+    &#34;&#34;&#34;
+    Inserts a single post to the post_tree widget.
+    &#34;&#34;&#34;
+    self._messages.append(dict)
+    id = len(self._messages) - 1  # adjust id for 0-base of treeview widget
+    self._insert_post_tree(id, message)</code></pre>
+</details>
+</dd>
+<dt id="GUI.Body.node_select"><code class="name flex">
+<span>def <span class="ident">node_select</span></span>(<span>self, event)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Nodes will have the username of all the accounts that you have sent/recieved messages to.
+Clicking on a node will open the chat history (sent and recieved messages in chronologial order)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def node_select(self, event):
+    &#34;&#34;&#34;
+    Nodes will have the username of all the accounts that you have sent/recieved messages to.
+    Clicking on a node will open the chat history (sent and recieved messages in chronologial order)
+    &#34;&#34;&#34;
+    digits = self.posts_tree.selection()[0][1:]
+    leading_zeros = True
+    value = &#39;&#39;
+
+    # The .selection()[0] method of our treeview widget returns a 4 character string as an id
+    # here I just got rid of the leading zeroes and got an accurate index value by converting
+    # it from hexadecimal
+    for i in digits:
+        if i == &#39;0&#39; and leading_zeros:
+            continue
+        elif i != &#39;0&#39;:
+            leading_zeros = False
+        value = value + i
+
+    index = int(value, 16) - 1
+
+    self.selected_contact = self._contacts[index]
+    self.current_profile.load_profile(self.current_path)
+
+    self._chat_history = []
+
+    contact_messages = self.current_profile.get_chat_messages(self.selected_contact)
+    self.generate_chat_history(contact_messages)
+
+    print(self._chat_history)
+    self.message_viewer.delete(0.0, &#34;end&#34;)
+
+    for chat in self._chat_history:
+        self.message_viewer.insert(0.0, chat)
+
+    print(&#34;CURENT CONTACT SELECTED: &#34;, self.selected_contact)</code></pre>
+</details>
+</dd>
+<dt id="GUI.Body.reset_ui"><code class="name flex">
+<span>def <span class="ident">reset_ui</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Resets all UI widgets to their default state. Useful for when clearing the UI is neccessary such
+as when a new DSU file is loaded, for example.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def reset_ui(self):
+    &#34;&#34;&#34;
+    Resets all UI widgets to their default state. Useful for when clearing the UI is neccessary such
+    as when a new DSU file is loaded, for example.
+    &#34;&#34;&#34;
+    self.set_text_entry(&#34;&#34;)
+    self.message_editor.configure(state=tk.NORMAL)
+    self._messages = []
+    for item in self.posts_tree.get_children():
+        self.posts_tree.delete(item)</code></pre>
+</details>
+</dd>
+<dt id="GUI.Body.set_contacts"><code class="name flex">
+<span>def <span class="ident">set_contacts</span></span>(<span>self, users: list)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Populates the ._contacts attribute with the users from the acive DSU file</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_contacts(self, users: list):
+    &#34;&#34;&#34;
+    Populates the ._contacts attribute with the users from the acive DSU file
+    &#34;&#34;&#34;
+    self._contacts = copy.deepcopy(users)
+    for contact in self._contacts:
+        try:
+            self._insert_post_tree(len(self._messages), contact)
+        except TclError as e:
+            print(&#34;set_contacts error&#34;)
+            continue</code></pre>
+</details>
+</dd>
+<dt id="GUI.Body.set_messages"><code class="name flex">
+<span>def <span class="ident">set_messages</span></span>(<span>self, messages: list)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Populates the self._messages attribute with messages from the active DSU file.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_messages(self, messages: list):
+    &#34;&#34;&#34;
+    Populates the self._messages attribute with messages from the active DSU file.
+    &#34;&#34;&#34;
+    self._messages = copy.deepcopy(messages)</code></pre>
+</details>
+</dd>
+<dt id="GUI.Body.set_text_entry"><code class="name flex">
+<span>def <span class="ident">set_text_entry</span></span>(<span>self, text: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Sets the text to be displayed in the message_viewer widget.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_text_entry(self, text: str):
+    &#34;&#34;&#34;
+    Sets the text to be displayed in the message_viewer widget.
+    &#34;&#34;&#34;
+    self.message_viewer.delete(0.0, &#34;end&#34;)
+    self.message_viewer.insert(0.0, text)</code></pre>
+</details>
+</dd>
+<dt id="GUI.Body.sort_by_timestamp"><code class="name flex">
+<span>def <span class="ident">sort_by_timestamp</span></span>(<span>self, message_list)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This function takes a list of messages and sorts it by timestamp.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def sort_by_timestamp(self, message_list):
+    &#34;&#34;&#34;
+    This function takes a list of messages and sorts it by timestamp.
+    &#34;&#34;&#34;
+    sorted_list = sorted(message_list, key=lambda d: d[&#39;timestamp&#39;])
+    return sorted_list</code></pre>
+</details>
+</dd>
+<dt id="GUI.Body.update_messages"><code class="name flex">
+<span>def <span class="ident">update_messages</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This function will run on a timer to check for incoming messages to the user and update the profile and GUI
+accordingly.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def update_messages(self):
+    &#34;&#34;&#34;
+    This function will run on a timer to check for incoming messages to the user and update the profile and GUI
+    accordingly.
+    &#34;&#34;&#34;
+    current_user = Profile()
+    current_user.load_profile(self.current_path)
+    update_messenger = DirectMessenger(username=current_user.username, password=current_user.password)
+    newmessages = update_messenger.retrieve_new()
+
+    for message in newmessages:
+        if message not in current_user._messages:
+            current_user.add_msg(message)
+
+    current_user.save_profile(self.current_path)
+
+    if self.selected_contact != &#39;&#39;:
+        contact_messages = current_user.get_chat_messages(self.selected_contact)
+        self.generate_chat_history(contact_messages)
+
+        for chat in self._chat_history:
+            if chat not in self.message_viewer.get(&#39;1.0&#39;, &#39;end&#39;):
+                self.message_viewer.insert(0.0, chat)
+
+    tree_contact_list = []
+
+    for i in self.posts_tree.get_children():
+        tree_contact_list.append(self.posts_tree.item(i)[&#34;text&#34;])
+    for user in current_user._users:
+        if user not in tree_contact_list:
+            self.add_contact(user)
+    # print(&#34;looping&#34;)
+    self.root.after(ms=1000, func=self.update_messages)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="GUI.Footer"><code class="flex name class">
+<span>class <span class="ident">Footer</span></span>
+<span>(</span><span>root, send_callback=None, add_callback=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A subclass of tk.Frame that is responsible for drawing all of the widgets
+in the footer portion of the root frame.</p>
+<p>Construct a frame widget with the parent MASTER.</p>
+<p>Valid resource names: background, bd, bg, borderwidth, class,
+colormap, container, cursor, height, highlightbackground,
+highlightcolor, highlightthickness, relief, takefocus, visual, width.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Footer(tk.Frame):
+    &#34;&#34;&#34;
+    A subclass of tk.Frame that is responsible for drawing all of the widgets
+    in the footer portion of the root frame.
+    &#34;&#34;&#34;
+    def __init__(self, root, send_callback=None, add_callback=None):
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self._send_callback = send_callback
+        self._add_callback = add_callback
+
+        # IntVar is a variable class that provides access to special variables
+        # for Tkinter widgets. is_online is used to hold the state of the chk_button widget.
+        # The value assigned to is_online when the chk_button widget is changed by the user
+        # can be retrieved using he get() function:
+        # chk_value = self.is_online.get()
+        self.is_online = tk.IntVar()
+        # After all initialization is complete, call the _draw method to pack the widgets
+        # into the Footer instance 
+        self._draw()
+
+    def add_click(self):
+        &#34;&#34;&#34;
+        Calls the callback function specified in the online_callback class attribute, if
+        available, when the chk_button widget has been clicked.
+        &#34;&#34;&#34;
+        if self._add_callback is not None:
+            self._add_callback()
+
+    def send_click(self):
+        &#34;&#34;&#34;
+        Calls the callback function specified in the save_callback class attribute, if
+        available, when the save_button has been clicked.
+        &#34;&#34;&#34;
+        if self._send_callback is not None:
+            self._send_callback()
+
+    def _draw(self):
+        &#34;&#34;&#34;
+        Call only once upon initialization to add widgets to the frame
+        &#34;&#34;&#34;
+        send_button = tk.Button(master=self, text=&#34;Send Message&#34;, width=20)
+        send_button.configure(command=self.send_click)
+        send_button.pack(fill=tk.BOTH, side=tk.RIGHT, padx=5, pady=5)
+
+        # ADD USER BUTTON INSTEAD OF READY LABEL
+        add_user_button = tk.Button(master=self, text=&#34;Add User&#34;, width=10)
+        add_user_button.configure(command=self.add_click)
+        add_user_button.pack(fill=tk.BOTH, side=tk.LEFT, padx=10, pady=5)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>tkinter.Frame</li>
+<li>tkinter.Widget</li>
+<li>tkinter.BaseWidget</li>
+<li>tkinter.Misc</li>
+<li>tkinter.Pack</li>
+<li>tkinter.Place</li>
+<li>tkinter.Grid</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="GUI.Footer.add_click"><code class="name flex">
+<span>def <span class="ident">add_click</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Calls the callback function specified in the online_callback class attribute, if
+available, when the chk_button widget has been clicked.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def add_click(self):
+    &#34;&#34;&#34;
+    Calls the callback function specified in the online_callback class attribute, if
+    available, when the chk_button widget has been clicked.
+    &#34;&#34;&#34;
+    if self._add_callback is not None:
+        self._add_callback()</code></pre>
+</details>
+</dd>
+<dt id="GUI.Footer.send_click"><code class="name flex">
+<span>def <span class="ident">send_click</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Calls the callback function specified in the save_callback class attribute, if
+available, when the save_button has been clicked.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def send_click(self):
+    &#34;&#34;&#34;
+    Calls the callback function specified in the save_callback class attribute, if
+    available, when the save_button has been clicked.
+    &#34;&#34;&#34;
+    if self._send_callback is not None:
+        self._send_callback()</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="GUI.MainApp"><code class="flex name class">
+<span>class <span class="ident">MainApp</span></span>
+<span>(</span><span>root)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A subclass of tk.Frame that is responsible for drawing all of the widgets
+in the main portion of the root frame. Also manages all method calls for
+the Profile class.</p>
+<p>Construct a frame widget with the parent MASTER.</p>
+<p>Valid resource names: background, bd, bg, borderwidth, class,
+colormap, container, cursor, height, highlightbackground,
+highlightcolor, highlightthickness, relief, takefocus, visual, width.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class MainApp(tk.Frame):
+    &#34;&#34;&#34;
+    A subclass of tk.Frame that is responsible for drawing all of the widgets
+    in the main portion of the root frame. Also manages all method calls for
+    the Profile class.
+    &#34;&#34;&#34;
+    def __init__(self, root):
+        tk.Frame.__init__(self, root)
+        self.root = root
+
+        # Initialize a new Profile and assign it to a class attribute.
+        self._current_profile = Profile()
+
+        # To make sure that a file is open before using send/add
+        self._profile_filename = False
+
+        # After all initialization is complete, call the _draw method to pack the widgets
+        # into the root frame
+        self._draw()
+
+    def send_message(self):
+        &#34;&#34;&#34;
+        Takes the message from the message editor and sends it through the DSP server
+        to the specified username
+        &#34;&#34;&#34;
+        # May need to plan this to accept an index from a contacts list instead of
+        # passing in a username. 
+        message = self.body.get_text_entry()
+        self.body.message_editor.delete(0.0, &#34;end&#34;)
+        dm_user = DirectMessenger(username=self._current_profile.username,
+                                  password=self._current_profile.password)
+
+        dm_user.send(message, self.body.selected_contact)
+
+        currentprofile = Profile()
+        if self._profile_filename is not False:
+            currentprofile.load_profile(self._profile_filename)
+            currentprofile.add_msg(dm_user.sent_messages[0])
+            currentprofile.save_profile(self._profile_filename)
+        print(&#34;MESSAGE SENT&#34;)
+
+    def new_profile(self):
+        &#34;&#34;&#34;
+        Creates a new DSU file when the &#39;New&#39; menu item is clicked.
+        &#34;&#34;&#34;
+        if self._profile_filename == False:
+            filename = tk.filedialog.asksaveasfile(filetypes=[(&#39;Distributed Social Profile&#39;, &#39;*.dsu&#39;)],
+                                                   defaultextension=&#39;.dsu&#39;)
+            try:
+                self._profile_filename = filename.name
+                self._current_profile = Profile()
+                self.body.reset_ui()
+                self.body.set_contacts(self._current_profile._users)
+                self.body.current_profile = self._current_profile
+                self.body.current_path = self._profile_filename
+            except AttributeError as e:
+                print(&#34;New profile operation interrupted.&#34;)
+
+            # Opens a new popup window for user to enter their own username and password
+            if self._profile_filename is False:
+                print(&#34;No filename provided&#34;)
+                return
+            else:
+                self.newfile_window()
+        else:
+            print(&#34;Please restart the program before trying to create a new profile.&#34;)
+
+    def newfile_window(self):
+        &#34;&#34;&#34;
+        A popup window that will prompt the user for username and password when creating a new file
+        &#34;&#34;&#34;
+        self.newfile_popup = tk.Toplevel()
+
+        user_label = tk.Label(master=self.newfile_popup, text=&#34;Username&#34;)
+        user_label.pack(fill=&#39;x&#39;, padx=50, pady=5)
+        self.user_input = tk.Text(master=self.newfile_popup, height=1, width=20)
+        self.user_input.pack(fill=&#39;x&#39;, padx=50, pady=5)
+
+        password_label = tk.Label(master=self.newfile_popup, text=&#34;Password&#34;)
+        password_label.pack(fill=&#39;x&#39;, padx=50, pady=5)
+        self.password_input = tk.Text(master=self.newfile_popup, height=1, width=20)
+        self.password_input.pack(fill=&#39;x&#39;, padx=50, pady=5)
+
+        button_submit = tk.Button(master=self.newfile_popup, text=&#34;Submit&#34;, width=5, command=lambda: self.submit_info())
+        button_submit.pack(fill=&#39;x&#39;)
+
+    # vvvv-------------------ADDED AFTER HARSHAL GUI---------------------vvvvv
+
+    def add_user_window(self):
+        &#34;&#34;&#34;
+        A popup window that will prompt the user for username to add to contacts list
+        &#34;&#34;&#34;
+        self.add_popup = tk.Toplevel()
+
+        contact_label = tk.Label(master=self.add_popup, text=&#34;Recipient Username:&#34;)
+        contact_label.pack(fill=&#39;x&#39;, padx=50, pady=5)
+        self.contact_input = tk.Text(master=self.add_popup, height=1, width=20)
+        self.contact_input.pack(fill=&#39;x&#39;, padx=50, pady=5)
+
+        add_contact = tk.Button(master=self.add_popup, text=&#34;Add Contact&#34;, width=5, command=lambda: self.add_user())
+        add_contact.pack(fill=&#39;x&#39;)
+
+    def submit_info(self):
+        &#34;&#34;&#34;
+        The command used by the submit button in the popup window to set the current profile username
+        and password and save profile to the dsu file
+        &#34;&#34;&#34;
+        self._current_profile.username = self.user_input.get(&#34;1.0&#34;, &#39;end-1c&#39;)
+        self._current_profile.password = self.password_input.get(&#34;1.0&#34;, &#39;end-1c&#39;)
+
+        messenger = DirectMessenger(username=self._current_profile.username, password=self._current_profile.password)
+        username_valid = True
+        try:
+            messenger.retrieve_all()
+        except UnboundLocalError:
+            self._current_profile.username = &#34;dusername123&#34;
+            self._current_profile.password = &#34;dpassword123&#34;
+
+        self._current_profile.save_profile(self._profile_filename)
+        self.body.update_messages()
+        self.newfile_popup.destroy()
+
+    def add_user(self):
+        &#34;&#34;&#34;
+        A callback function for responding to the add_user button. Will connect with the body
+        to insert an empty chat history with a given username supplied by the message editor
+        &#34;&#34;&#34;
+        if self._profile_filename is False:
+            print(&#34;No filename provided.&#34;)
+            return
+
+        self._current_profile.load_profile(self._profile_filename)  # Load first
+        contact = self.contact_input.get(&#34;1.0&#34;, &#39;end-1c&#39;)
+
+        # If contact is nothing, do not add
+        if contact == &#39;&#39;:
+            return
+        elif contact not in self.body._contacts:
+            self.body.add_contact(contact)
+            self._current_profile._users = self.body.get_contacts()
+
+            print(&#34;CURRENT USERS from MAINAPP: &#34;, self._current_profile._users)
+
+        else:
+            print(&#34;Contact already exists.&#34;)
+
+        self._current_profile.save_profile(self._profile_filename)  # Save last
+        self.add_popup.destroy()
+
+    def open_profile(self):
+        &#34;&#34;&#34;
+        Opens an existing DSU file when the &#39;Open&#39; menu item is clicked and loads the profile
+        data into the UI.
+        &#34;&#34;&#34;
+        if self._profile_filename == False:
+            filename = tk.filedialog.askopenfile(filetypes=[(&#39;Distributed Social Profile&#39;, &#39;*.dsu&#39;)])
+            try:
+                self._profile_filename = filename.name
+                self._current_profile = Profile()
+                self._current_profile.load_profile(self._profile_filename)
+                self.body.reset_ui()  # Reset UI
+                # self.body.set_messages(self._current_profile._messages)
+                self.body.set_contacts(self._current_profile._users)
+                self.body.current_profile = self._current_profile
+                self.body.current_path = self._profile_filename
+
+                # UPDATE MESSAGES HERE
+                self.body.update_messages()
+
+            except AttributeError as e:
+                print(&#34;Open operation interrupted.&#34;)
+        else:
+            print(&#34;Please restart the program before loading a new profile!&#34;)
+
+    def close(self):
+        &#34;&#34;&#34;
+        Closes the program when the &#39;Close&#39; menu item is clicked.
+        &#34;&#34;&#34;
+        self.root.destroy()
+
+    def save_profile(self):
+        &#34;&#34;&#34;
+        Saves the text currently in the message_editor widget to the active DSU file.
+        &#34;&#34;&#34;
+        # Check for filename
+        if self._profile_filename is False:
+            print(&#34;No filename provided&#34;)
+            return
+
+    def _draw(self):
+        &#34;&#34;&#34;
+        Call only once, upon initialization to add widgets to root frame
+        &#34;&#34;&#34;
+        # Build a menu and add it to the root frame.
+        menu_bar = tk.Menu(self.root)
+        self.root[&#39;menu&#39;] = menu_bar
+        menu_file = tk.Menu(menu_bar)
+        menu_bar.add_cascade(menu=menu_file, label=&#39;File&#39;)
+        menu_file.add_command(label=&#39;New&#39;, command=self.new_profile)
+        menu_file.add_command(label=&#39;Open...&#39;, command=self.open_profile)
+        menu_file.add_command(label=&#39;Close&#39;, command=self.close)
+
+        # The Body and Footer classes must be initialized and packed into the root window.
+        self.body = Body(self.root, self._current_profile)
+        self.body.pack(fill=tk.BOTH, side=tk.TOP, expand=True)
+        self.footer = Footer(self.root, send_callback=self.send_message, add_callback=self.add_user_window)
+        self.footer.pack(fill=tk.BOTH, side=tk.BOTTOM)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>tkinter.Frame</li>
+<li>tkinter.Widget</li>
+<li>tkinter.BaseWidget</li>
+<li>tkinter.Misc</li>
+<li>tkinter.Pack</li>
+<li>tkinter.Place</li>
+<li>tkinter.Grid</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="GUI.MainApp.add_user"><code class="name flex">
+<span>def <span class="ident">add_user</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A callback function for responding to the add_user button. Will connect with the body
+to insert an empty chat history with a given username supplied by the message editor</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def add_user(self):
+    &#34;&#34;&#34;
+    A callback function for responding to the add_user button. Will connect with the body
+    to insert an empty chat history with a given username supplied by the message editor
+    &#34;&#34;&#34;
+    if self._profile_filename is False:
+        print(&#34;No filename provided.&#34;)
+        return
+
+    self._current_profile.load_profile(self._profile_filename)  # Load first
+    contact = self.contact_input.get(&#34;1.0&#34;, &#39;end-1c&#39;)
+
+    # If contact is nothing, do not add
+    if contact == &#39;&#39;:
+        return
+    elif contact not in self.body._contacts:
+        self.body.add_contact(contact)
+        self._current_profile._users = self.body.get_contacts()
+
+        print(&#34;CURRENT USERS from MAINAPP: &#34;, self._current_profile._users)
+
+    else:
+        print(&#34;Contact already exists.&#34;)
+
+    self._current_profile.save_profile(self._profile_filename)  # Save last
+    self.add_popup.destroy()</code></pre>
+</details>
+</dd>
+<dt id="GUI.MainApp.add_user_window"><code class="name flex">
+<span>def <span class="ident">add_user_window</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A popup window that will prompt the user for username to add to contacts list</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def add_user_window(self):
+    &#34;&#34;&#34;
+    A popup window that will prompt the user for username to add to contacts list
+    &#34;&#34;&#34;
+    self.add_popup = tk.Toplevel()
+
+    contact_label = tk.Label(master=self.add_popup, text=&#34;Recipient Username:&#34;)
+    contact_label.pack(fill=&#39;x&#39;, padx=50, pady=5)
+    self.contact_input = tk.Text(master=self.add_popup, height=1, width=20)
+    self.contact_input.pack(fill=&#39;x&#39;, padx=50, pady=5)
+
+    add_contact = tk.Button(master=self.add_popup, text=&#34;Add Contact&#34;, width=5, command=lambda: self.add_user())
+    add_contact.pack(fill=&#39;x&#39;)</code></pre>
+</details>
+</dd>
+<dt id="GUI.MainApp.close"><code class="name flex">
+<span>def <span class="ident">close</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Closes the program when the 'Close' menu item is clicked.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def close(self):
+    &#34;&#34;&#34;
+    Closes the program when the &#39;Close&#39; menu item is clicked.
+    &#34;&#34;&#34;
+    self.root.destroy()</code></pre>
+</details>
+</dd>
+<dt id="GUI.MainApp.new_profile"><code class="name flex">
+<span>def <span class="ident">new_profile</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Creates a new DSU file when the 'New' menu item is clicked.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def new_profile(self):
+    &#34;&#34;&#34;
+    Creates a new DSU file when the &#39;New&#39; menu item is clicked.
+    &#34;&#34;&#34;
+    if self._profile_filename == False:
+        filename = tk.filedialog.asksaveasfile(filetypes=[(&#39;Distributed Social Profile&#39;, &#39;*.dsu&#39;)],
+                                               defaultextension=&#39;.dsu&#39;)
+        try:
+            self._profile_filename = filename.name
+            self._current_profile = Profile()
+            self.body.reset_ui()
+            self.body.set_contacts(self._current_profile._users)
+            self.body.current_profile = self._current_profile
+            self.body.current_path = self._profile_filename
+        except AttributeError as e:
+            print(&#34;New profile operation interrupted.&#34;)
+
+        # Opens a new popup window for user to enter their own username and password
+        if self._profile_filename is False:
+            print(&#34;No filename provided&#34;)
+            return
+        else:
+            self.newfile_window()
+    else:
+        print(&#34;Please restart the program before trying to create a new profile.&#34;)</code></pre>
+</details>
+</dd>
+<dt id="GUI.MainApp.newfile_window"><code class="name flex">
+<span>def <span class="ident">newfile_window</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A popup window that will prompt the user for username and password when creating a new file</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def newfile_window(self):
+    &#34;&#34;&#34;
+    A popup window that will prompt the user for username and password when creating a new file
+    &#34;&#34;&#34;
+    self.newfile_popup = tk.Toplevel()
+
+    user_label = tk.Label(master=self.newfile_popup, text=&#34;Username&#34;)
+    user_label.pack(fill=&#39;x&#39;, padx=50, pady=5)
+    self.user_input = tk.Text(master=self.newfile_popup, height=1, width=20)
+    self.user_input.pack(fill=&#39;x&#39;, padx=50, pady=5)
+
+    password_label = tk.Label(master=self.newfile_popup, text=&#34;Password&#34;)
+    password_label.pack(fill=&#39;x&#39;, padx=50, pady=5)
+    self.password_input = tk.Text(master=self.newfile_popup, height=1, width=20)
+    self.password_input.pack(fill=&#39;x&#39;, padx=50, pady=5)
+
+    button_submit = tk.Button(master=self.newfile_popup, text=&#34;Submit&#34;, width=5, command=lambda: self.submit_info())
+    button_submit.pack(fill=&#39;x&#39;)</code></pre>
+</details>
+</dd>
+<dt id="GUI.MainApp.open_profile"><code class="name flex">
+<span>def <span class="ident">open_profile</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Opens an existing DSU file when the 'Open' menu item is clicked and loads the profile
+data into the UI.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def open_profile(self):
+    &#34;&#34;&#34;
+    Opens an existing DSU file when the &#39;Open&#39; menu item is clicked and loads the profile
+    data into the UI.
+    &#34;&#34;&#34;
+    if self._profile_filename == False:
+        filename = tk.filedialog.askopenfile(filetypes=[(&#39;Distributed Social Profile&#39;, &#39;*.dsu&#39;)])
+        try:
+            self._profile_filename = filename.name
+            self._current_profile = Profile()
+            self._current_profile.load_profile(self._profile_filename)
+            self.body.reset_ui()  # Reset UI
+            # self.body.set_messages(self._current_profile._messages)
+            self.body.set_contacts(self._current_profile._users)
+            self.body.current_profile = self._current_profile
+            self.body.current_path = self._profile_filename
+
+            # UPDATE MESSAGES HERE
+            self.body.update_messages()
+
+        except AttributeError as e:
+            print(&#34;Open operation interrupted.&#34;)
+    else:
+        print(&#34;Please restart the program before loading a new profile!&#34;)</code></pre>
+</details>
+</dd>
+<dt id="GUI.MainApp.save_profile"><code class="name flex">
+<span>def <span class="ident">save_profile</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Saves the text currently in the message_editor widget to the active DSU file.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def save_profile(self):
+    &#34;&#34;&#34;
+    Saves the text currently in the message_editor widget to the active DSU file.
+    &#34;&#34;&#34;
+    # Check for filename
+    if self._profile_filename is False:
+        print(&#34;No filename provided&#34;)
+        return</code></pre>
+</details>
+</dd>
+<dt id="GUI.MainApp.send_message"><code class="name flex">
+<span>def <span class="ident">send_message</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Takes the message from the message editor and sends it through the DSP server
+to the specified username</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def send_message(self):
+    &#34;&#34;&#34;
+    Takes the message from the message editor and sends it through the DSP server
+    to the specified username
+    &#34;&#34;&#34;
+    # May need to plan this to accept an index from a contacts list instead of
+    # passing in a username. 
+    message = self.body.get_text_entry()
+    self.body.message_editor.delete(0.0, &#34;end&#34;)
+    dm_user = DirectMessenger(username=self._current_profile.username,
+                              password=self._current_profile.password)
+
+    dm_user.send(message, self.body.selected_contact)
+
+    currentprofile = Profile()
+    if self._profile_filename is not False:
+        currentprofile.load_profile(self._profile_filename)
+        currentprofile.add_msg(dm_user.sent_messages[0])
+        currentprofile.save_profile(self._profile_filename)
+    print(&#34;MESSAGE SENT&#34;)</code></pre>
+</details>
+</dd>
+<dt id="GUI.MainApp.submit_info"><code class="name flex">
+<span>def <span class="ident">submit_info</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>The command used by the submit button in the popup window to set the current profile username
+and password and save profile to the dsu file</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def submit_info(self):
+    &#34;&#34;&#34;
+    The command used by the submit button in the popup window to set the current profile username
+    and password and save profile to the dsu file
+    &#34;&#34;&#34;
+    self._current_profile.username = self.user_input.get(&#34;1.0&#34;, &#39;end-1c&#39;)
+    self._current_profile.password = self.password_input.get(&#34;1.0&#34;, &#39;end-1c&#39;)
+
+    messenger = DirectMessenger(username=self._current_profile.username, password=self._current_profile.password)
+    username_valid = True
+    try:
+        messenger.retrieve_all()
+    except UnboundLocalError:
+        self._current_profile.username = &#34;dusername123&#34;
+        self._current_profile.password = &#34;dpassword123&#34;
+
+    self._current_profile.save_profile(self._profile_filename)
+    self.body.update_messages()
+    self.newfile_popup.destroy()</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="GUI.Body" href="#GUI.Body">Body</a></code></h4>
+<ul class="">
+<li><code><a title="GUI.Body.add_contact" href="#GUI.Body.add_contact">add_contact</a></code></li>
+<li><code><a title="GUI.Body.generate_chat_history" href="#GUI.Body.generate_chat_history">generate_chat_history</a></code></li>
+<li><code><a title="GUI.Body.get_contacts" href="#GUI.Body.get_contacts">get_contacts</a></code></li>
+<li><code><a title="GUI.Body.get_text_entry" href="#GUI.Body.get_text_entry">get_text_entry</a></code></li>
+<li><code><a title="GUI.Body.insert_post" href="#GUI.Body.insert_post">insert_post</a></code></li>
+<li><code><a title="GUI.Body.node_select" href="#GUI.Body.node_select">node_select</a></code></li>
+<li><code><a title="GUI.Body.reset_ui" href="#GUI.Body.reset_ui">reset_ui</a></code></li>
+<li><code><a title="GUI.Body.set_contacts" href="#GUI.Body.set_contacts">set_contacts</a></code></li>
+<li><code><a title="GUI.Body.set_messages" href="#GUI.Body.set_messages">set_messages</a></code></li>
+<li><code><a title="GUI.Body.set_text_entry" href="#GUI.Body.set_text_entry">set_text_entry</a></code></li>
+<li><code><a title="GUI.Body.sort_by_timestamp" href="#GUI.Body.sort_by_timestamp">sort_by_timestamp</a></code></li>
+<li><code><a title="GUI.Body.update_messages" href="#GUI.Body.update_messages">update_messages</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="GUI.Footer" href="#GUI.Footer">Footer</a></code></h4>
+<ul class="">
+<li><code><a title="GUI.Footer.add_click" href="#GUI.Footer.add_click">add_click</a></code></li>
+<li><code><a title="GUI.Footer.send_click" href="#GUI.Footer.send_click">send_click</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="GUI.MainApp" href="#GUI.MainApp">MainApp</a></code></h4>
+<ul class="two-column">
+<li><code><a title="GUI.MainApp.add_user" href="#GUI.MainApp.add_user">add_user</a></code></li>
+<li><code><a title="GUI.MainApp.add_user_window" href="#GUI.MainApp.add_user_window">add_user_window</a></code></li>
+<li><code><a title="GUI.MainApp.close" href="#GUI.MainApp.close">close</a></code></li>
+<li><code><a title="GUI.MainApp.new_profile" href="#GUI.MainApp.new_profile">new_profile</a></code></li>
+<li><code><a title="GUI.MainApp.newfile_window" href="#GUI.MainApp.newfile_window">newfile_window</a></code></li>
+<li><code><a title="GUI.MainApp.open_profile" href="#GUI.MainApp.open_profile">open_profile</a></code></li>
+<li><code><a title="GUI.MainApp.save_profile" href="#GUI.MainApp.save_profile">save_profile</a></code></li>
+<li><code><a title="GUI.MainApp.send_message" href="#GUI.MainApp.send_message">send_message</a></code></li>
+<li><code><a title="GUI.MainApp.submit_info" href="#GUI.MainApp.submit_info">submit_info</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
